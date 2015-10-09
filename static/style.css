@@ -1,0 +1,183 @@
+/* debug style */
+
+
+/** {
+	border: 1px solid;
+}*/
+
+
+/*global styles*/
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+	color: grey;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color: grey;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+	color: grey;
+	text-decoration: none;
+}
+
+hr {
+	color: black;
+	background-color: black;
+	margin-top: 0;
+	height: 3px;
+	border: none;
+}
+
+pre {
+	white-space: pre-wrap; 
+}
+
+.error {
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*element styles*/
+
+header #logo {
+	width: 100px;
+	/*vertical-align: top;*/
+	float: left;
+	margin-bottom: 30px;
+
+}
+
+header #main-title {
+    color: #999;
+    font-size: 65px;
+    font-weight: bold;
+    text-decoration: none;
+    /*display: inline-block;*/
+    float: left;
+    margin-left: 10px;	
+}
+
+header .authorize {
+	font-size: 16px;
+	color: grey;
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	right:0px;
+	vertical-align: top;
+	float: right;
+}
+
+header .menu {
+	/*position: absolute;*/
+	top: 0;
+	right:200px;
+	font-size: 16px;
+	/*display: inline-block;*/
+	float: right;
+	margin-right: 30px;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	/*font-family: "open sans", sans-serif;*/
+	width: 800px;
+	margin: 0 auto;
+	padding: 25px;
+	position: relative;
+}
+
+#login thead {
+	font-size: 25px;
+}
+
+#login .login_label {
+	width: 150px;
+}
+
+#signup thead {
+	font-size: 25px;
+}
+
+#signup .signup_label {
+	width: 150px;
+}
+
+#middle {
+	min-height: 500px;
+}
+
+#middle .blog-container {
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+#middle .blog-container .subject-date-container {
+	position: relative;
+}
+
+#middle .blog-container .subject {
+	color: black;
+	display: inline-block;
+	vertical-align: center;
+}
+
+#middle .blog-container .date {
+	font-size: 14px;
+	color: grey;
+	position: absolute;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	vertical-align: center;
+}
+
+#middle .blog-container .content {
+	line-height: 1.2em; 
+	/*overflow:hidden;*/
+	text-align: justify;
+}
+
+footer {
+	margin-top: 30px;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+
+/* other styles */
+
+/*.generated {
+	width: 100%;
+	text-align: right;
+	color: grey;
+	font-size: 12px;
+	position: relative;
+}*/
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for post in posts %}
+
+	<div class="blog-container" style="background-color:{{post.color}}">
+		<div class="subject-date-container">
+			<h2 class="subject">
+				<a class="subject" href="/{{post.key().id()}}">{{post.subject[:50]|capitalize()}}</a>
+			</h2>
+			<h4 class="date">{{post.last_modified.strftime("%c")}}</h4>
+		</div>
+		<hr>
+		<div>
+			<pre class="content">{{post.content|safe}}</pre>
+		</div>
+	</div>
+
+{% endfor %}
+
+<!-- <div class="generated">{{time}}</div> -->
+
+
+{% endblock %}

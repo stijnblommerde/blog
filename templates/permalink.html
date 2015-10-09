@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="blog-container" style="background-color:{{post.color}}">
+	<div class="subject-date-container">
+		<h2 class="subject">{{post.subject[:50]}}</h2>
+		<h4 class="date">{{post.last_modified.strftime("%b %d, %Y")}}</h4>
+	</div>
+	<hr>
+	<pre class="content">{{post.content|safe}}</pre>
+</div>
+<br />
+
+<!-- <div class="generated">{{time}}</div>
+ -->
+
+{% endblock %}

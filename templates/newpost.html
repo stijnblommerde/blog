@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form id="new-post" method="post">
+	<h2>New Post</h2>
+	
+	<div class="form-group">
+		<label>Subject</label>
+		<input class="form-control" type="text" name="subject" value="{{subject}}">
+	</div>
+
+	<!-- subject error: subject is too short (min 3 char) or long (max 50 char) -->
+	<div class="error">{{length_error}}</div>
+
+	<div class="form-group">
+		<label>Blog</label>
+		<textarea class="form-control" rows="5" name="content">{{content}}</textarea>
+	</div>
+
+	<!-- missing error: either subject or content is missing -->
+	<div class="error">{{missing_error}}</div>
+
+	<input class="btn btn-default" class="submit" type="submit">
+</form>
+
+
+{% endblock %}
